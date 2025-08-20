@@ -5,7 +5,7 @@ library(ggpubr)
 library(boot)
 library(showtext) # Font
 
-base_path <- "E:/Tesis/Datos"
+base_path <- "E:/Datos"
 
 font_add_google("Montserrat", "Montserrat")
 showtext_auto() 
@@ -195,7 +195,7 @@ examples <- ggarrange(p_nino_82_83, p_nina_75_76,
           ncol = 1,
           font.label = list(size = 25))
 
-ggsave("E:/Tesis/Graficos/examples.png", 
+ggsave("E:/Graficos/examples.png", 
        plot = examples,
        width = 6, 
        height = 6, 
@@ -270,7 +270,7 @@ density <- ggarrange(p_TT, p_KI, p_MLI,p_MSI, p_GDI,
           legend = "bottom",
           font.label = list(size = 25))
 
-ggsave("E:/Tesis/Graficos/density.png", 
+ggsave("E:/Graficos/density.png", 
        plot = density,
        width = 6, 
        height = 6, 
@@ -375,9 +375,10 @@ ci <- ggarrange(p_m, p_md,
           nrow=1,
           font.label = list(size = 25))
 
-ggsave("E:/Tesis/Graficos/ci.png", 
+ggsave("E:/Graficos/ci.png", 
        plot = ci,
        width = 6, 
        height = 4, 
        units = "in", 
        dpi = 200)
+
