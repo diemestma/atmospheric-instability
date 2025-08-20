@@ -23,7 +23,7 @@ for (year in 1983:2021) {
                                  file_suffix)))
         
         if (class(a) != "try-error") {
-          file <- paste0("E:/Tesis/Datos/",year,"/",
+          file <- paste0("E:/Datos/",year,"/",
                          year,month,day,hour,"-84628.csv")
           write.csv(a, file = file, sep = ",", row.names = FALSE)
         }
@@ -31,5 +31,6 @@ for (year in 1983:2021) {
     } 
   }
 }
+
 
 
