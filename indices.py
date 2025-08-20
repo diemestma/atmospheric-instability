@@ -6,7 +6,7 @@ from metpy.units import units
 from numpy import concatenate
 
 # Setup
-base_path = "E:/Tesis/Datos"
+base_path = "E:/Datos"
 file_suffix = "-84628.csv"
 
 # 1. Import ----
@@ -90,7 +90,8 @@ for year in range(1973, 2022):  # Note: range stops before 2022
 indices_df = pd.DataFrame(indices)
 
 # Export path
-output_path = "E:/Tesis/Datos/Resultados/indices_metpy.csv"  
+output_path = "E:/Datos/Resultados/indices_metpy.csv"  
 
 # Export to CSV
+
 indices_df.to_csv(output_path, index=False)
